@@ -7,13 +7,14 @@ __pycache__/
 *.py[cod]
 
 # Database
-# db.sqlite3
+db.sqlite3
 
 # Environment Variables
 .env
 
 # Media Files
 media/
+images/
 
 # VS Code
 .vscode/
