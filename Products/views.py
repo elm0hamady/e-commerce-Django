@@ -1,5 +1,7 @@
 from django.shortcuts import render
-
+from .models import Product
 # Create your views here.
 def products(request):
-    return render(request,'Products/products.html')
+    pro = Product.objects.all()
+    pro_filter = {'pro':str(pro.count())}
+    return render(request,'Products/products.html',pro_filter)
