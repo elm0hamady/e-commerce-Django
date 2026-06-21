@@ -1,4 +1,7 @@
 <h1>Welcome to our products</h1>
 {% for product in pro %}
     <h2>{{ product}}</h2>
+{% if product.image %}
+    <img src="{{ product.image.url }}">
+{% endif %}
 {% endfor %}
