@@ -1,6 +1,6 @@
 from django.db import models
 
-class Product(models.Model):
+class Producta(models.Model):
     category_list = [('phone','phone'),
                      ('computer','computer'),
                      ('monitor','monitor'),
@@ -24,3 +24,4 @@ class Product(models.Model):
     
     class Meta:
         verbose_name = 'phone'
+        ordering = ['created_at']

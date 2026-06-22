@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
+
+class Creds(models.Model):
+    username = models.CharField(max_length=20)
+    password = models.CharField(max_length=20)
 #relations
 
 
@@ -32,8 +36,3 @@ class User(models.Model):
 class Coupon(models.Model):
     code = models.TextField(max_length=40)
     relation = models.OneToOneField(User,on_delete=models.PROTECT)
-
-
-    
-    
-
